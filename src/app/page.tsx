@@ -6,7 +6,6 @@ import {
   getNestedAnimeResponse,
   reproduce,
 } from "../libs/api-libs";
-// import Promotion from "@/components/utilities/Promotion";
 
 const Home = async () => {
   const topAnime = await getAnimeResponse("top/anime/", "limit=8");
@@ -43,7 +42,6 @@ const Home = async () => {
           />
           <TopCharacters api={topCharacters} />
         </section>
-        {/* <Promotion /> */}
       </div>
     </>
   );

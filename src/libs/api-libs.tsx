@@ -11,7 +11,7 @@ export const getNestedAnimeResponse = async (
   objectProperty: any
 ) => {
   const response = await getAnimeResponse(resource);
-  return response.data.flatMap((result: any) => result[objectProperty]);
+  return response.data?.flatMap((result: any) => result[objectProperty]);
 };
 
 export const reproduce = (data: any, gap: number) => {
